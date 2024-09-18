@@ -28,4 +28,17 @@ func main() {
 
 	fruitList = append(fruitList[1:])
 	fmt.Println(fruitList)
+
+	//no inheritance in golang; no super or parent
+
+	abraham := User{"Abraham", "abc.xyz.com", true, 16}
+	fmt.Printf("%+v\n", abraham)
+	fmt.Println("Name is %v and email is %v", abraham.Name, abraham.Email)
+}
+
+type User struct {
+	Name   string
+	Email  string
+	Status bool
+	Age    int
 }
