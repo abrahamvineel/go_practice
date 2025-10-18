@@ -5,6 +5,9 @@ import (
 )
 
 func main() {
+
+	//go run compile + run
+	//go build only comple and run the binary later
 	// var ptr *int
 	// fmt.Println("value of pointer is ", ptr)
 
@@ -33,7 +36,7 @@ func main() {
 
 	abraham := User{"Abraham", "abc.xyz.com", true, 16}
 	fmt.Printf("%+v\n", abraham)
-	fmt.Println("Name is %v and email is %v", abraham.Name, abraham.Email)
+	fmt.Printf("Name is %v and email is %v\n", abraham.Name, abraham.Email)
 }
 
 type User struct {
