@@ -14,4 +14,8 @@ func main() {
 	for i := range 6 {
 		fmt.Println(i)
 	}
+
+	a := make([]string, 4)
+	a[0] = "string"
+	fmt.Println("array :", a)
 }
